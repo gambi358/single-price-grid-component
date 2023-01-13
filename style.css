@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	width: 1440px;
+	margin: 0 auto;
+	background-color: hsl(204, 43%, 93%);
+	font-size: 16px;
+	font-family: Karla, sans-serif;
+}
+
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+
+	width: 650px;
+	height: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+
+}
+
+.topcontainer {
+	height: 45%;
+	padding:30px 30px 0 30px;
+}
+
+.topcontainer h1 {
+	color: hsl(179, 62%, 43%);
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
+}
+
+.topcontainer h2 {
+	color: hsl(71, 73%, 54%);
+	font-size: 1.15rem;
+	margin-bottom: 1rem;
+
+
+}
+
+
+.topcontainer p { 
+	color: gray; 
+	line-height: 1.5rem;
+	}
+
+.bottomcontainer {
+	display: flex;
+	height: 55%;
+	color: rgba(255,255,255, 0.9);
+
+}
+
+.bottomcontainer h2 {
+	font-size: 1.25rem;
+	margin-bottom: 15px;
+
+}
+
+.bottomcontainer h3 {
+	font-size: 1.75rem;
+	margin-bottom: 15px;
+
+}
+
+.bottomcontainer span {
+	font-size: 1rem;
+	font-weight: 400;
+	color: rgba(255,255,255, 0.6);
+	vertical-align: middle;
+
+}
+
+.bottomcontainer a {
+	display: block;
+	padding: 15px 20px;
+	background-color: hsl(71, 73%, 54%);
+	border-radius: 5px;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+
+}
+
+
+
+.bottomcontainer li {
+	list-style-type: none;
+	font-size: 0.85rem;
+	padding-bottom: 5px;
+
+}
+
+.leftcontainer {
+	width: 50%;
+	background-color: hsl(179, 62%, 43%);
+	padding:30px 30px 30px 30px;
+	border-radius: 0 0 0 10px;
+}
+
+.rightcontainer {
+	width: 50%;
+	background-color: hsl(179, 62%, 50%);
+	padding:30px 30px 30px 30px;
+
+	border-radius: 0 0 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+
+	body {
+		width: 375px;
+
+
+	}
+
+	.container{
+	width: 100%;
+	height: 60%;
+	}
+
+	.bottomcontainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+	}
+
+	.leftcontainer, .rightcontainer {
+		width: auto;
+	}
+
+	.leftcontainer {
+		border-radius: 0;
+	}
+
+	.rightcontainer {
+		border-radius: 0 0 10px 10px;
+	}
+
+	.topcontainer {
+		height: auto;
+	}
+
+	.topcontainer p { 
+	margin-bottom: 20px;
+	}
+}
